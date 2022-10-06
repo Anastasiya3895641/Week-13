@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body> 
+<button onclick="modalWindow()">Нажми меня</button>
+
+<button onclick="calcSum()">+</button>
+<button onclick="calcMin()">-</button>
+<button onclick="calcMult()">*</button>
+<button onclick="calcDivis()">/</button>
+
+
+<script type="text/javascript"> 
+function modalWindow()
+{
+let age = prompt('Как тебя зовут?','');
+alert(`Привет, ${age}!`); 
+}
+</script>
+
+
+
+
+<script type="text/javascript"> 
+    function calcSum() {
+    let n1 = +prompt('Введи первое число','');
+    let n2 = +prompt('Введи второе число','');
+    function calcResult (n1,n2) 
+    {
+        return `${n1 + n2}`
+    }
+    let result = calcResult(n1,n2);
+    alert (`Результат: ${result}`); 
+    }
+    </script>
+
+<script type="text/javascript"> 
+    function calcMin()
+    {
+    let n1 = +prompt('Введи первое число','');
+    let n2 = +prompt('Введи второе число','');
+    function calcResult (n1,n2) 
+    {
+        return `${n1 - n2}`
+    }
+    let result = calcResult(n1,n2);
+    alert (`Результат: ${result}`); 
+    }
+    </script>
+
+<script type="text/javascript"> 
+    function calcMult()
+    {
+    let n1 = +prompt('Введи первое число','');
+    let n2 = +prompt('Введи второе число','');
+    function calcResult (n1,n2) 
+    {
+        return `${n1 * n2}`
+    }
+    let result = calcResult(n1,n2);
+    alert (`Результат: ${result}`); 
+    }
+    </script>
+
+<script type="text/javascript"> 
+    function calcDivis()
+    {
+    let n1 = +prompt('Введи первое число','');
+    let n2 = +prompt('Введи второе число','');
+    function calcResult (n1,n2) 
+    {
+        return `${n1 / n2}`
+    }
+    let result = calcResult(n1,n2);
+    alert (`Результат: ${result}`); 
+    }
+    </script>
+
+
+    
+</body>
+</html>
